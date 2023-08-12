@@ -31,13 +31,13 @@ if __name__ == "__main__":
 
 # numeric data types 
 
-## integer calculations 
 
+print("----- integer -----")
 get_result(2+3*4, 14, 1) 
 get_result((2+3)*4, 20, 2) 
 get_result(2**10, 1024, 3) 
 
-## floating point calculations  
+print("----- floating point -----") 
 get_result(6/3, 2.0, 4)
 get_result(7/3, 2.3333333333333335, 5) 
 get_result(7//3, 2,6) # floor 
@@ -46,6 +46,13 @@ get_result(3/6, 0.5, 8)
 get_result(3//6, 0, 9) # __floordiv__() 
 get_result(3%6, 3, 10) 
 get_result(2**100, 1267650600228229401496703205376, 11) # exponentiation 
+
+print("----- boolean -----")  
+get_result(True, True, 1)
+get_result(False,False, 2) 
+get_result(False or True, True, 3) 
+get_result(not (False or True), False, 4) 
+get_result(True and True, True, 5) 
 
 
 
