@@ -54,7 +54,20 @@ get_result(False or True, True, 3)
 get_result(not (False or True), False, 4) 
 get_result(True and True, True, 5) 
 
+print("----- logical -----")
+get_result(5==10, True, 1)
+get_result( 10 > 5, True, 2)
+get_result( (5 >=1) and (5<=10), True, 3)
 
+print("----- identifiers -----")
 
+the_sum = 0
+get_result(the_sum, 0, 1)
+
+the_sum = the_sum + 1 
+get_result(the_sum, 1, 2)
+
+the_sum = True 
+get_result(the_sum, True, 3) 
 
 
