@@ -28,9 +28,11 @@ get_result([1.3, True, 6.5], [1.3, True, 6.5], 1)
 list_one = [1.3, True, 6.5] 
 get_result(list_one, [1.3, True, 6.5], 2)
 
+# Initialise a list with repetition 
 list_two = [0] * 6 
 get_result(list_two, [0, 0, 0, 0, 0, 0], 3) 
 
+## Note the repetition is of the references to the object in the sequence 
 list_three = [1, 2, 3, 4] 
 list_four = [list_three] * 3
 get_result(list_four, [[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]])
