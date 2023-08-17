@@ -5,7 +5,8 @@ Miller &amp; Ranum "Problem Solving with Algoritms and Data Structrues Using Pyt
 """ 
 
 def sequential_search(the_list, item): 
-    """Starting at the first item in the list, 
+    """ Sequential Search of an ordered list of integers. 
+        Starting at the first item in the list, 
         move from item to item in sequence, 
         until the item is found or the end is reached
     """
