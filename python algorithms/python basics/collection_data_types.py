@@ -40,3 +40,41 @@ get_result(list_four, [[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]])
 list_three[2] = 45 
 get_result(list_four, [[1, 2, 45, 4], [1, 2, 45, 4], [1, 2, 45, 4]])
 
+# List Methods: 
+
+lst_mthd = [1024, 3, True, 6.5] 
+print(f"#lst expected [1024, 3, True, 6.5] got: {lst_mthd}")
+
+lst_mthd.append(False) 
+print(f"#lst expected [1024, 3, True, 6.5, False] got: {lst_mthd}")
+
+lst_mthd.insert(2, 4.5) # insert at lst[2] 
+print(f"#lst expected [1024, 3, 4.5, True, 6.5, False] got: {lst_mthd}")
+
+print(f"#pop expected False got: {lst_mthd.pop()}") 
+print(f"lst expected [1024, 3, 4.5, True, 6.5] got: {lst_mthd}")
+
+print(f"#pop(1) expected 3 got: {lst_mthd.pop(1) }") 
+print(f"#lst expected [1024, 4.5, True, 6.5] got: {lst_mthd}")
+
+print(f"#pop(2) expected True got: {lst_mthd.pop(2) }") 
+print(f"#lst expected [1024, 4.5, 6.5] got: {lst_mthd}")
+
+lst_mthd.sort() 
+print(f"#lst expected [4.5, 6.5, 1024] got: {lst_mthd}") 
+
+lst_mthd.reverse() 
+print(f"#lst expected [1024, 6.5, 4.5] got: {lst_mthd}") 
+
+print(f"#count(6.5) expected 1 got: {lst_mthd.count(6.5)}") 
+print(f"#index(4.5) expected 2 got: {lst_mthd.index(4.5)}") 
+
+lst_mthd.remove(6.5) 
+print(f"#lst expected [1024, 4.5] got: {lst_mthd}") 
+
+del lst_mthd[0] 
+print(f"#lst expected [4.5] got: {lst_mthd}") 
+
+
+
+
