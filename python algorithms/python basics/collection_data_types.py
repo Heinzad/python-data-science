@@ -77,4 +77,18 @@ print(f"#lst expected [4.5] got: {lst_mthd}")
 
 
 
+# Ranges 
+
+print(f"range(10): {range(10)}") 
+
+print(f"list(range(10)): {list(range(10))}")
+
+print(f"range(5,10): {range(5,10)}") 
+
+print(f"list(range(5,10)): {list(range(5,10))}") 
+
+print(f"list(range(5,10,2)): {list(range(5,10,2))}") 
+
+print(f"list(range(10,1,-1)): {list(range(10,1,-1))}") 
+ 
 
