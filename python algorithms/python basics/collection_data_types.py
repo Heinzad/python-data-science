@@ -92,3 +92,8 @@ print(f"list(range(5,10,2)): {list(range(5,10,2))}")
 print(f"list(range(10,1,-1)): {list(range(10,1,-1))}") 
  
 
+# Strings 
+x = "David" 
+
+assert x == "David", "x should be 'David'" 
+
