@@ -97,3 +97,8 @@ x = "David"
 
 assert x == "David", "x should be 'David'" 
 
+
+# Tuples 
+
+trifle = (1, False, 5.56) 
+print(trifle) 
