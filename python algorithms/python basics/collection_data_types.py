@@ -102,3 +102,5 @@ assert x == "David", "x should be 'David'"
 
 trifle = (1, False, 5.56) 
 print(trifle) 
+
+trifle = (2, True, 958) 
