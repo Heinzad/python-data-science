@@ -16,6 +16,14 @@ class BinaryHeap:
         self.priority_queue = [None] # [0] not used so integer division can be used
         self.queue_length = 0 
 
+    def __len__(self):
+        """Returns the length of the priority queue heap """
+        return len(self.priority_queue) - 1
+
+    def __repr__(self):
+        """Returns the list for the priority queue heap """
+        return repr(self.priority_queue)
+
     def _limb_up(self, idx): 
         """ Percolates a given item up a tree
             by switching positions (via temporary storage) 
@@ -76,6 +84,10 @@ class BinaryHeap:
         
         >>> pqueue = BinaryHeap()
         >>> pqueue.heapify([9,5,8,4,7,3,6,1,2])
+        >>> print(pqueue)
+        [0, 1, 2, 3, 4, 7, 8, 6, 9, 5]
+        >>> print(len(pqueue))
+        9
         >>> result_list = []
         >>> while not pqueue.is_empty(): result_list.append(pqueue.out())
         >>> print(result_list)
